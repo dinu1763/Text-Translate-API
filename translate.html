@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center
+    }
+    #left {
+        height: 300px;
+        width: 300px;
+    }
+
+    #right {
+        height: 300px;
+        width: 300px;
+    }
+
+    #container {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+    button {
+        padding: 1%;
+    }
+</style>
+<body>
+    <h1>Text Translate Application</h1>
+    <div id="container">
+        <label for="language">Select Language</label>
+        <select name="language" id="Lang" onchange="selectedLang()">
+            
+        </select>
+        <textarea id="left" cols="30" rows="10"></textarea>
+        <textarea id="right" cols="30" rows="10"></textarea>
+        <button onclick="getthevalu()">translate</button>
+    </div>
+    
+</body>
+<script src="translate.js"></script>
+</html>
